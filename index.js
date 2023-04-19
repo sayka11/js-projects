@@ -2,10 +2,11 @@
 // let surname = prompt("Please enter surname");
 // let fname = prompt("Please enter name");
 // let email = prompt("Please enter email");
-// function result() {
-//     alert("*" + email + "*" + "-"+ " " + "*" + surname + "*" + " " + "*" + fname + "*" + " "  );
+// function result(surname,fname,email ) {
+// return surname + fname + email;
 // }
-// result();
+// console.log(result(surname,fname,email));
+
 
 // N2
 // const fixPrice = 5;
@@ -13,10 +14,10 @@
 // let lengthWhithProsent = 0;
 // let km = +prompt("Please enter road length in kilometers for get total price");
 // let addPriceAmount = km * addPrice;
-// function result() {
-//    alert("Total Price" + "=" + " " + (lengthWhithProsent += addPriceAmount + fixPrice));
+// function result(fixPrice,addPrice,lengthWhithProsent,km,addPriceAmount) {
+//    return("Total Price" + "=" + " " + (lengthWhithProsent += addPriceAmount + fixPrice));
 // }
-// result();
+// console.log(result(fixPrice,addPrice,lengthWhithProsent,km,addPriceAmount));
 
 // N3
 // let breadPrice = 1;
@@ -32,67 +33,67 @@
 // if (milkQuantity > 5) { milkPrice = milkPrice - (milkPrice * 0.10) };
 // totalPrice = (breadPrice * breadQuantity) + (cheesePrice * cheeseQuantity) + (milkPrice * milkQuantity);
 // if (promotion = 'yes') { totalPrice = totalPrice - (totalPrice * 0.15); };
-// function result() {
-//     alert(" Bread Price: " + breadPrice * breadQuantity + "$" + " Cheese Price: " + cheesePrice * cheeseQuantity + "$" + " Milk Price: " + milkPrice * milkQuantity + "$" + " Total Price: " + totalPrice + "$")
+// function result(breadPrice,cheesePrice,milkPrice,totalPrice,breadQuantity,cheeseQuantity,milkQuantity,promotion) {
+//     return(" Bread Price: " + breadPrice * breadQuantity + "$" + " Cheese Price: " + cheesePrice * cheeseQuantity + "$" + " Milk Price: " + milkPrice * milkQuantity + "$" + " Total Price: " + totalPrice + "$")
 // }
-// result();
+// console.log(result(breadPrice,cheesePrice,milkPrice,totalPrice,breadQuantity,cheeseQuantity,milkQuantity,promotion));
 
 // N4
 // let guestsNumber = +prompt("Please enter number of guests");
-// function result() {
-//     if (guestsNumber <= 2) { alert("We can offer you small table- up to 2 person") };
-//     if ((guestsNumber > 2) && (guestsNumber <= 4)) { alert("We can offer you medium table - up to 4 person") };
-//     if ((guestsNumber >= 4) && (guestsNumber <= 8)) { alert("We can offer you large table - up to 8 person") };
-//     if (guestsNumber > 8) { alert("I'm sorry, but your company is too big") };
+// function result(guestsNumber) {
+//     if (guestsNumber <= 2) { return("We can offer you small table- up to 2 person") };
+//     if ((guestsNumber > 2) && (guestsNumber <= 4)) { return("We can offer you medium table - up to 4 person") };
+//     if ((guestsNumber >= 4) && (guestsNumber <= 8)) { return("We can offer you large table - up to 8 person") };
+//     if (guestsNumber > 8) { return("I'm sorry, but your company is too big") };
 // }
-// result();
+// console.log(result(guestsNumber));
 
 // N5
 // let a = +prompt("Please enter first number");
 // let b = +prompt("Please enter second nuumber");
 // let c = +prompt("Please enter third number");
 // let numbers = [a, b, c];
-// function result() {
-//         if ((numbers[0] < numbers[1]) && (numbers[0] < numbers[2]) && (numbers[1] > numbers[2])) { alert(numbers = [b, c, a]); }
-//         if ((numbers[0] < numbers[1]) && (numbers[0] < numbers[2]) && (numbers[2] > numbers[1])) { alert(numbers = [b, a, c]); }
-//         if ((numbers[1] < numbers[0]) && (numbers[1] < numbers[2]) && (numbers[0] > numbers[2])) { alert(numbers = [a, c, b]); }
-//         if ((numbers[2] < numbers[0]) && (numbers[2] < numbers[1]) && (numbers[0] > numbers[1])) { alert(numbers =[a, b, c]); }
-//         if ((numbers[2] > numbers[0]) && (numbers[2] > numbers[1]) && (numbers[0] > numbers[1])) { alert(numbers =[c, a, b]); }
-//         if ((numbers[2] > numbers[0]) && (numbers[2] > numbers[1]) && (numbers[1] > numbers[0])) { alert(numbers =[c, b, a]); }
+// function result(a, b, c) {
+//         if ((numbers[0] < numbers[1]) && (numbers[0] < numbers[2]) && (numbers[1] > numbers[2])) { return(numbers = [b, c, a]); }
+//         if ((numbers[0] > numbers[1]) && (numbers[0] > numbers[2]) && (numbers[2] > numbers[1])) { return(numbers = [a, c, b]); }
+//         if ((numbers[1] > numbers[0]) && (numbers[1] > numbers[2]) && (numbers[0] > numbers[2])) { return(numbers = [b, a, c]); }
+//         if ((numbers[2] > numbers[0]) && (numbers[2] > numbers[1]) && (numbers[0] > numbers[1])) { return(numbers =[c, a, b]); }
+//         if ((numbers[2] > numbers[0]) && (numbers[2] > numbers[1]) && (numbers[1] > numbers[0])) { return(numbers =[c, b, a]); }
+//         if ((numbers[0] > numbers[1]) && (numbers[0] > numbers[2]) && (numbers[1] > numbers[2])) { return(numbers =[a, b, c]); }
 // }
 
-// result();
+// console.log(result(a, b, c));
 
 // N6
-// let suraya = {
-//     name: "Suraya",
-//     age: 21,
-//     numberOfOrders: 4,
-//     amountOfOrders: 100,
-// }
+let suraya = {
+    name: "Suraya",
+    age: 21,
+    amountOfOrders: [100,20,30,50]
+}
+const mustafa = {
+    name: "Mustafa",
+    age: 30,
+    amountOfOrders: [20,30,40,50,60]
+}
+const aliya = {
+    name: "Aliya",
+    age: 60,
+    amountOfOrders: [100,100]
+}
+let enterName = { name: prompt("Please enter your name:") }
+function result( suraya, mustafa, aliya, enterName) {
+for (let i = 0; i <= suraya.amountOfOrders.length; i++) {
+if(suraya.amountOfOrders.length >= 4 && i >=100){ return("You receive a discount")}}
+for (let i = 0; i <= mustafa.amountOfOrders.length; i++) {
+if(mustafa.amountOfOrders.length >= 4 && i >=100){ return("You receive a discount")}}
+for (let i = 0; i <= aliya.amountOfOrders.length; i++) {
+if(aliya.amountOfOrders.length >= 4 && i >=100){ return("You receive a discount")}}}
+console.log(result(suraya,mustafa,aliya,enterName,));
 
-// const mustafa = {
-//     name: "Mustafa",
-//     age: 30,
-//     numberOfOrders: 6,
-//     amountOfOrders: 200,
-// }
-// const aliya = {
-//     name: "Aliya",
-//     age: 60,
-//     numberOfOrders: 2,
-//     amountOfOrders: 200,
-// }
 
-// let enterName = { name: prompt("Please enter your name:") }
 
-// function result() {
 
-//     if (enterName.name == suraya.name || enterName.name == mustafa.name || enterName.name == aliya.name) { alert("You receive a discount") }
-//     else if (enterName.name != suraya.name || enterName.name != mustafa.name || enterName.name != aliya.name) { alert("You don't receive a discount") }
 
-// }
-// result();
 
 // N7
 // let a = +prompt("Please enter length of an item:");
