@@ -65,32 +65,72 @@
 // console.log(result(a, b, c));
 
 // N6
-let suraya = {
-    name: "Suraya",
-    age: 21,
-    amountOfOrders: [100,20,30,50]
-}
-const mustafa = {
-    name: "Mustafa",
-    age: 30,
-    amountOfOrders: [20,30,40,50,60]
-}
-const aliya = {
-    name: "Aliya",
-    age: 60,
-    amountOfOrders: [100,100]
-}
-let enterName = { name: prompt("Please enter your name:") }
-function result( suraya, mustafa, aliya, enterName) {
-for (let i = 0; i <= suraya.amountOfOrders.length; i++) {
-if(suraya.amountOfOrders.length >= 4 && i >=100){ return("You receive a discount")}}
-for (let i = 0; i <= mustafa.amountOfOrders.length; i++) {
-if(mustafa.amountOfOrders.length >= 4 && i >=100){ return("You receive a discount")}}
-for (let i = 0; i <= aliya.amountOfOrders.length; i++) {
-if(aliya.amountOfOrders.length >= 4 && i >=100){ return("You receive a discount")}}}
-console.log(result(suraya,mustafa,aliya,enterName,));
-
-
+// let suraya = {
+//     name: "Suraya",
+//     age: 21,
+//     amountOfOrders: [100, 20, 30, 50],
+//   };
+//   const mustafa = {
+//     name: "Mustafa",
+//     age: 30,
+//     amountOfOrders: [20, 30, 40, 50, 60],
+//   };
+//   const aliya = {
+//     name: "Aliya",
+//     age: 60,
+//     amountOfOrders: [100, 100],
+//   };
+//   let enterName = prompt("Please enter your name:");
+//   function result(suraya, mustafa, aliya, enterName) {
+//     if (enterName == "Suraya") {
+//       for (let i = 0; i <= suraya.amountOfOrders.length; i++) {
+//         if (
+//           ( suraya.amountOfOrders.length >= 4 &&
+//             suraya.amountOfOrders[i] >= 100) ||
+//           suraya.age >= 60
+//         ) {
+//           return "You receive a discount";
+//         } else {
+          
+//           return "You don't receive a discount";
+//         }
+//       }
+//     }
+  
+//     if (enterName == "Mustafa") {
+//       for (let i = 0; i <= mustafa.amountOfOrders.length; i++) {
+//         if (
+//           (mustafa.amountOfOrders.length >= 4 &&
+//           mustafa.amountOfOrders[i] >= 100)||
+//           mustafa.age >= 60
+  
+//         ) {
+//           return "You receive a discount";
+//         } else {
+          
+//           return "You don't receive a discount";
+//         }
+//       }
+//     }
+  
+//     if (enterName == "Aliya") {
+//       for (let i = 0; i <= aliya.amountOfOrders.length; i++) {
+       
+//         if (
+//           ( aliya.amountOfOrders.length >= 4 &&
+//             aliya.amountOfOrders[i] >= 100) ||
+//           aliya.age >= 60
+//         ) {
+//           return "You receive a discount";
+//         } else {
+//           console.log("aliya false");
+//           return "You don't receive a discount";
+//         }
+//       }
+//     }
+//   }
+  
+//   console.log(result(suraya, mustafa, aliya, enterName));
 
 
 
@@ -104,14 +144,14 @@ console.log(result(suraya,mustafa,aliya,enterName,));
 // let sum = a + b + c;
 
 // if (a < 100 && b < 100 && c < 100 && sum <= 150 && weight <= 10 && 3 <= distance <= 10) {
-//     function result() { alert("We take your order!") }
+//     function result(a,b,c,weight,distance,sum) { return "We take your order!" }
 // }
 // else {
-//     alert("Your entered parameters don't meet our requirements. Do you want to familiarize with our rules?");
+//    alert("Your entered parameters don't meet our requirements. Do you want to familiarize with our rules?");
 
-//     if (true) { alert("The sum of the length, width and height of an item does not exceed 150cm; None of the measurements exceed 100cm; The weight of the shipment does not exceed 10 kg; Delivery distance is in the range of 3 to 10km") }
+//     if (true) { alert("The sum of the length, width and height of an item does not exceed 150cm. None of the measurements exceed 100cm. The weight of the shipment does not exceed 10 kg. Delivery distance is in the range of 3 to 10km")}
 // }
-// result();
+// console.log(result(a,b,c,weight,distance,sum));
 
 // N8
 // let a = {
@@ -136,7 +176,7 @@ console.log(result(suraya,mustafa,aliya,enterName,));
 //     "9": "nine"
 // };
 // let number = prompt("Please enter the two-digits number");
-// function result(){
+// function result(a,b,number){
 //     if(number[0]==0){alert("Please enter two-digits number")}
 //         if (number == 10 ) {alert("ten")};
 //         if (number == 11 ) {alert("eleven")};
@@ -246,17 +286,53 @@ console.log(result(suraya,mustafa,aliya,enterName,));
 //  if(number[1]== 8){alert(a["9"] + " " + b["8"])}
 //  if(number[1]== 9){alert(a["9"] + " " + b["9"])}}
 // }
-// result();
+// console.log(result(a,b,number));
 
 
 // N9
 // let number = +prompt("Please enter the number");
 // let i;
-// function result(){
+// function result(number,i){
 //     for(i=1; i<=1000; i++){
-//         if(number%i===0){console.log(i)}
+//         if(number%i===0){return(i)}
 //     }
 // }
-// result();
+// console.log(result(number,i));
 
+// N10
+// let initialAmount = +prompt("Please enter initial amount:") 
+// let years = prompt("Please enter duration in years")
+// let percent = +prompt("Please enter % per year:")
+// let percentResult = percent/100;
+// function result(initialAmount,years,percent,percentResult){
+// for(let i = 0; i<years; i++)
+// {initialAmount += initialAmount * percentResult;}
+// return initialAmount;
+// }
+// console.log(result(initialAmount,years,percent,percentResult))
+
+// N11
+// let numberOfOrders = +prompt("Please enter the number of orders:")
+// let points = [1,1];
+// function result(numberOfOrders,points){
+
+// for (let i =2; i<=numberOfOrders; i++){
+//     points[i] = points[i-1]+points[i-2];}
+
+// return points.slice(0,numberOfOrders);
+// }
+// console.log(result(numberOfOrders,points))
+
+// N12
+// let numbersOfCode = +prompt("Please enter your code:");
+// let sum=0;
+// function result(numbersOfCode,sum){
+//     while (numbersOfCode!=0)
+//     {
+//         sum += Math.floor(numbersOfCode%10);
+//         numbersOfCode /= 10;
+//     }
+// return Math.floor(sum);
+// }
+// console.log(result(numbersOfCode,sum));
 
