@@ -336,3 +336,19 @@
 // }
 // console.log(result(numbersOfCode,sum));
 
+// N13
+// let amount = +prompt("Please enter requested amount")
+// function result (amount) {
+//     const bills = [100, 50, 20, 10, 5, 1];
+//     let banknotes = {};
+    
+//     for (let bill of bills) {
+//       let numOfNotes = Math.floor(amount / bill);
+//       if (numOfNotes > 0) {
+//         banknotes[bill] = numOfNotes;
+//         amount -= numOfNotes * bill;
+//       }
+//     }
+//     return banknotes;
+//   }
+//   console.log(result(amount));
