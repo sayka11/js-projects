@@ -143,14 +143,14 @@
 // let distance = +prompt("Please enter delivery distance:");
 // let sum = a + b + c;
 
-// if (a < 100 && b < 100 && c < 100 && sum <= 150 && weight <= 10 && 3 <= distance <= 10) {
-//     function result(a,b,c,weight,distance,sum) { return "We take your order!" }
-// }
+ 
+//     function result(a,b,c,weight,distance,sum) { if (a < 100 && b < 100 && c < 100 && sum <= 150 && weight <= 10 && 3 <= distance <= 10) 
+//         return "We take your order!";
 // else {
 //    alert("Your entered parameters don't meet our requirements. Do you want to familiarize with our rules?");
 
 //     if (true) { alert("The sum of the length, width and height of an item does not exceed 150cm. None of the measurements exceed 100cm. The weight of the shipment does not exceed 10 kg. Delivery distance is in the range of 3 to 10km")}
-// }
+// }}
 // console.log(result(a,b,c,weight,distance,sum));
 
 // N8
